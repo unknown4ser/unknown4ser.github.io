@@ -1,0 +1,121 @@
+body{
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 230, 234);
+}
+
+header{
+    border-radius: 50px;
+    padding: 10px;
+    background-image:url('Images/love.jpg');
+    background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: black; /* Text color for visibility */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+}
+
+footer{
+    border-radius: 100px;
+    background-color: plum;
+    text-align: center;
+}
+
+ul{
+	width: 570px;
+	border-top: 2px solid black;
+	border-bottom: 1px solid black;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	padding: 6px 10px 5px 10px;
+	font-weight: normal;
+}
+
+a:hover {
+	color: red;
+	background-color: black;
+	}
+
+.parent {
+    display: grid;
+    margin: 40px 20px 0 20px;
+    gap: 20px;
+    grid-template-areas: 
+    "head head head head"
+    "navi navi navi navi"
+    "content content side side"
+    "foot foot foot foot";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header{
+    grid-area: head;
+}
+
+article{
+    grid-area: content;
+}
+nav{
+    grid-area: navi;
+}
+aside{
+    grid-area: side;
+}
+footer{
+    grid-area: foot;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3{
+    font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+    font-weight: 100px;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+
+.container .box .dream img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
