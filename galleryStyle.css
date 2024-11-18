@@ -47,6 +47,24 @@ a:hover {
 	background-color: black;
 	}
 
+.list {
+    ul{
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Center items vertically (if needed) */
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 100%; /* Ensure container doesn't exceed screen width */
+        box-sizing: border-box;
+    }
+        @media (max-width: 600px) {
+            .use-case-item {
+                flex: 1 1 90%; 
+            }
+        }
+}
+
 .parent {
     display: grid;
     margin: 40px 20px 0 20px;
