@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A♡M Offcial Page</title>
+    
+    <!--CSS Style-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul class="sidebar"><b>
+            <li class="hide" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biodata.html">BIODATA</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </b></ul>
+        <ul><b>
+            <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="biodata.html">BIODATA</a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT US</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">GALLERY</a></li>
+            <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </b></ul>
+    </nav>
+
+    <div class="container-home">
+        <div id="home">
+            <!-- Welcome Section -->
+            <div id="welcome">
+                <h4>WELCOME TO A♡M Official Page</h4><br>
+                <p>
+                    Hi there! Welcome to A&M Page - Two Hearts, One Journey.<br>
+                    This website is a little corner of the internet where my moments, memories, and milestones together with Alysha will be shared.
+                    <br>From late-night talks to weekend adventures, every step we take is full of love, laughter, and growth.
+                    <br>Thank you for visiting ❤️
+                </p><br><br>
+                <p>Want to know about us? Click the button below.</p><br>
+                <button id="viewStallBtn" onclick=showBio()>Click Here</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 A♡M Official Page. All rights reserved. Created by Muaz.</p>
+    </footer>
+
+    <!--JS Code For Silde-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--JS Code File-->
+    <script src="script.js"></script>
+</body>
+</html>

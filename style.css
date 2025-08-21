@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'MyCustomFont', 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+
+h4 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    width: 100%;
+    padding: 30px;
+    background-color: maroon;
+    text-align: center;
+}
+
+footer p {
+    color: #f2f3f4;
+}
+
+
+
+/*NAVIGATION STYLE*/
+nav {
+    width: 100%;
+    height: 70px;
+    margin: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: maroon;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 70px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f0f0f0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    @media(max-width: 800px){
+        width: 0;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+/*SIDEBAR STYLE*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: darkred;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display:none;
+}
+
+.hide {
+    padding-top: 20px;
+}
+
+
+/*SLIDER STYLE*/
+#slide {
+    text-align: center;
+    padding: 40px 20px;
+    width: 400px;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.slide-image {
+    width: 65%;
+    height: 393px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*index.html STYLE*/
+.container-home {
+    background: url('Images/love2.jpg')no-repeat;
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin: 150px;
+}
+
+.container-home p {
+    color: #ffffff;
+}
+
+.container-home h4 {
+    color: #ffffff;
+}
+
+#viewStallBtn {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    background-color: #f2f3f4;
+}
+
+#viewStallBtn:hover {
+    background-color: maroon;
+    color: #ffffff;
+}
+
+
+
+/*about.html STYLE*/
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.about-content {
+    width:900px;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+}
+
+#about{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.about-content p {
+    text-align: justify;
+}
+
+.wishlist{
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.wishlist:hover {
+    color: rgb(213, 2, 2);
+}
+
+
+
+
+/*biodata.html STYLE*/
+.bio-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 200px;
+ padding: 50px;
+}
+
+#review-section{
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.alysha-bio{
+    background-color: white;
+    margin: 10px;
+    margin-bottom: 18px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.muaz-bio{
+    background-color: white;
+    margin: 10px;
+    margin-bottom: 18px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*gallery.html STYLE*/
+.gallery-title{
+    padding: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 100px 100px 100px;
+}
+
+.row img{
+    width: 95%;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+}
+
+
+
+/*reasons.html STYLE*/
+.reason-container{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: justify;
+    padding: 40px;
+}
+
+
+
+/*2024.html STYLE*/
+.a2024-container{
+    align-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+/*RESPONSIVE*/
+
+/*Laptop*/
+@media(max-width:1030px){
+    /*index.html STYLE*/
+    .container-home {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px;
+    }
+}
+/*Tablet*/
+@media(max-width:800px){
+    /*NAVIGATION STYLE*/
+    nav{
+        display: flex;
+    }
+    
+    nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav li{
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    
+    }
+    
+    nav a:hover{
+        background-color: darkred;
+    }
+    
+    nav li:first-child{
+        margin-right: auto;
+    }
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        margin: 560px;
+    }
+
+    /*index.hmtl STYLE*/
+    .container-home {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 100px;
+        padding: 50px;
+    }
+
+    /*gallery.html STYLE*/
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row img{
+        width: 98%;
+        border-radius: 15px;
+        padding: 2px;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 500px){
+    .menu{
+        display: flex;
+        margin: 220px;
+    }
+
+    .sidebar{
+        width:85%;
+    }
+
+    .menu {
+        padding-right: 500px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    /*gallery.html STYLE*/
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
